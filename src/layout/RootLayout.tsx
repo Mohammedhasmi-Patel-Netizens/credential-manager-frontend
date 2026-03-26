@@ -37,6 +37,14 @@ export default function RootLayout() {
         >
           About
         </NavLink>
+         <NavLink
+          to="/counter"
+          className={({ isActive }) =>
+            `${base} ${isActive ? active : inactive}`
+          }
+        >
+          Counter
+        </NavLink>
       </nav>
 
       <main className="p-6 bg-gray-100 min-h-screen">

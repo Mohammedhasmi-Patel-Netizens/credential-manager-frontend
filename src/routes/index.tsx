@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../layout/RootLayout";
+import Counter from "../components/Counter";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/hasmi",
         element: <h1>Hasmi</h1>,
+      },
+      {
+        path :"/counter",
+        element: <Counter/>
       },
       {
         path:"*",
